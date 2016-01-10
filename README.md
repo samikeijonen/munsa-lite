@@ -2,7 +2,7 @@
 
 Munsa Lite is a minimal theme for creative people like photobloggers and artists. It has a clean and fresh responsive design.
 
-It has [Munsa "Pro" version](https://foxland.fi/downloads/munsa/). available with more features
+It has [Munsa "Pro" version](https://foxland.fi/downloads/munsa/) available with more features.
 
 ## Documentation
 
