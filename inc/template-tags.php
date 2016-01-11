@@ -15,7 +15,7 @@ function munsa_lite_posted_on() {
 
 	// Set up entry date.
 	printf( '<span class="entry-date"><span class="screen-reader-text">%1$s </span><a href="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" ' . hybrid_get_attr( 'entry-published' ) . '>%4$s</time></a></span>',
-		esc_html_x( 'Posted on', 'Used before publish date.', 'munsa' ),
+		esc_html_x( 'Posted on', 'Used before publish date.', 'munsa-lite' ),
 		esc_url( get_permalink() ),
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date() )
@@ -23,7 +23,7 @@ function munsa_lite_posted_on() {
 	
 	// Set up byline.
 	printf( '<span class="byline"><span class="entry-author" ' . hybrid_get_attr( 'entry-author' ) . '><span class="screen-reader-text">%1$s </span><a class="entry-author-link" href="%2$s" rel="author" itemprop="url"><span itemprop="name">%3$s</span></a></span></span>',
-		esc_html_x( 'Author', 'Used before post author name.', 'munsa' ),
+		esc_html_x( 'Author', 'Used before post author name.', 'munsa-lite' ),
 		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 		get_the_author()
 	);
@@ -60,7 +60,7 @@ function munsa_lite_get_post_terms( $args = array() ) {
 		'after'      => '',
 		'items_wrap' => '<span %s>%s</span>',
 		/* Translators: Separates tags, categories, etc. when displaying a post. */
-		'sep'        => _x( ' #', 'taxonomy terms separator', 'munsa' )
+		'sep'        => _x( ' #', 'taxonomy terms separator', 'munsa-lite' )
 	);
 
 	$args = wp_parse_args( $args, $defaults );

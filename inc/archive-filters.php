@@ -36,7 +36,7 @@ function munsa_lite_archive_title_filter( $title ) {
 	}
 	
 	elseif ( is_search() ) {
-		$title = sprintf( esc_html__( 'Search results for &#8220;%s&#8221;', 'munsa' ), get_search_query() );
+		$title = sprintf( esc_html__( 'Search results for &#8220;%s&#8221;', 'munsa-lite' ), get_search_query() );
 	}
 
 	elseif ( is_post_type_archive() ) {

@@ -16,7 +16,7 @@ function munsa_lite_customize_register( $wp_customize ) {
 	$wp_customize->add_panel(
 		'theme',
 		array(
-			'title'    => esc_html__( 'Theme Settings', 'munsa' ),
+			'title'    => esc_html__( 'Theme Settings', 'munsa-lite' ),
 			'priority' => 10
 		)
 	);
