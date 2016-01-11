@@ -22,7 +22,9 @@ function munsa_lite_customize_register( $wp_customize ) {
 	);
 	
 	// Load different part of the Customizer.
+	require_once( get_template_directory() . '/inc/customizer/classes/customizer-info-text.php' );
 	require_once( get_template_directory() . '/inc/customizer/front-page.php' );
+	require_once( get_template_directory() . '/inc/customizer/munsa-pro.php' );
 	
 	// Use live preview on some fields.
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
