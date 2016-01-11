@@ -23,10 +23,12 @@
 		
 		<?php
 			wp_link_pages( array(
-				'before'    => '<div class="page-links">' . __( 'Pages:', 'munsa-lite' ),
-				'after'     => '</div>',
-				'pagelink'  => '<span class="screen-reader-text">' . __( 'Page', 'munsa-lite' ) . ' </span>%',
-				'separator' => '<span class="screen-reader-text">,</span> ',
+				'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'munsa-lite' ),
+				'after'       => '</div>',
+				'link_before' => '<span>',
+				'link_after'  => '</span>',
+				'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'munsa-lite' ) . ' </span>%',
+				'separator'   => '<span class="screen-reader-text">,</span> ',
 			) );
 		?>
 	
