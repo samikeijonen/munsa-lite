@@ -29,7 +29,6 @@ The following images are are used in `screenshot.png`. They are all licensed und
 
 * [Image 1](http://kaboompics.com/one_foto/1012/white-laptop-female-hand-note-pen-phone-desk#)
 * [Image 2](https://www.pexels.com/photo/people-sport-skateboard-skateboarder-2639/)
-* [Image 3](http://www.splitshire.com/tree-into-the-snow/)
 
 All other resources and theme elements are licensed under the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html), version 2 or later.
 
