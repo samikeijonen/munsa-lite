@@ -147,6 +147,26 @@ msgstr ""
 msgid "Blog URL text"
 msgstr ""
 
+#: inc/customizer/munsa-pro.php:12
+msgid "More Features"
+msgstr ""
+
+#: inc/customizer/munsa-pro.php:13
+msgid ""
+"<a href=\"%s\" target=\"_blank\">Upgrade to Munsa (Pro)</a> for additional "
+"features."
+msgstr ""
+
+#: inc/customizer/munsa-pro.php:34
+msgid "Munsa (Pro) Features"
+msgstr ""
+
+#: inc/customizer/munsa-pro.php:35
+msgid ""
+"Hide or change footer text, several addiotional page templates, new "
+"widgets, and support."
+msgstr ""
+
 #: inc/customizer.php:19
 msgid "Theme Settings"
 msgstr ""
