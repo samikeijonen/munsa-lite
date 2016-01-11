@@ -1,3 +1,3 @@
-=== Munsa ===
+=== Munsa Lite ===
 
 See README.md file.
