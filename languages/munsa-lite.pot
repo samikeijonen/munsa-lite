@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Munsa Lite 1.0.0\n"
+"Project-Id-Version: Munsa Lite 1.0.1\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
 "POT-Creation-Date: 2016-01-10 18:53:35+00:00\n"
 "MIME-Version: 1.0\n"
@@ -159,9 +159,9 @@ msgstr ""
 msgid "Next page"
 msgstr ""
 
-#: index.php:50 search.php:36 template-parts/content-audio.php:29
-#: template-parts/content-gallery.php:29 template-parts/content-page.php:28
-#: template-parts/content-video.php:29 template-parts/content.php:31
+#: index.php:50 search.php:36 template-parts/content-audio.php:31
+#: template-parts/content-gallery.php:31 template-parts/content-page.php:30
+#: template-parts/content-video.php:31 template-parts/content.php:33
 msgid "Page"
 msgstr ""
 
@@ -205,21 +205,21 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: template-parts/content-audio.php:39 template-parts/content-audio.php:40
-#: template-parts/content-gallery.php:39 template-parts/content-gallery.php:40
-#: template-parts/content-video.php:39 template-parts/content-video.php:40
-#: template-parts/content.php:41 template-parts/content.php:42
+#: template-parts/content-audio.php:41 template-parts/content-audio.php:42
+#: template-parts/content-gallery.php:41 template-parts/content-gallery.php:42
+#: template-parts/content-video.php:41 template-parts/content-video.php:42
+#: template-parts/content.php:43 template-parts/content.php:44
 #. Translators: #%s means text before category or tag.
 msgid "#%s"
 msgstr ""
 
-#: template-parts/content-audio.php:39 template-parts/content-gallery.php:39
-#: template-parts/content-video.php:39 template-parts/content.php:41
+#: template-parts/content-audio.php:41 template-parts/content-gallery.php:41
+#: template-parts/content-video.php:41 template-parts/content.php:43
 msgid "Categories"
 msgstr ""
 
-#: template-parts/content-audio.php:40 template-parts/content-gallery.php:40
-#: template-parts/content-video.php:40 template-parts/content.php:42
+#: template-parts/content-audio.php:42 template-parts/content-gallery.php:42
+#: template-parts/content-video.php:42 template-parts/content.php:44
 msgid "Tags"
 msgstr ""
 
