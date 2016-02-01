@@ -36,6 +36,11 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.0.2 - February 1, 2016
+
+* Better keyboard navigation support inside full screen menu and sidebar.
+* Hide preloader if Javascript is not loading.
+
 ### Version 1.0.0 - January 15, 2016
 
 * Everything's new!
