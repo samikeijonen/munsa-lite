@@ -1,5 +1,5 @@
 /**
- * Munsa Lite JavaScript file.
+ * Munsa JavaScript file.
  *
  * Set up the navigation and sidebar toggles.
  */
@@ -8,17 +8,17 @@
 	var body, page, scrollUp, scrollToContent, mainNav, mainNavWrap, primarySidebar, primarySidebarWrap, menuButton, menuToggle, sidebarButton, sidebarToggle;
 	
 	// Set up vars.
-	page                = $( '#site-wrapper' );
-	scrollUp            = page.find( '#scroll-up' );
-	scrollToContent     = page.find( '#scroll-to-content' );
-	mainNav             = page.find( '#menu-primary' );
-	mainNavWrap         = page.find( '#menu-primary .wrap' );
-	primarySidebar      = page.find( '#sidebar-primary' );
-	primarySidebarWrap  = page.find( '#sidebar-primary .wrap' );
-	menuButton          = page.find( '#menu-button' );
-	menuToggle          = page.find( '.main-navigation-toggle' );
-	sidebarButton       = page.find( '#sidebar-button' );
-	sidebarToggle       = page.find( '.sidebar-primary-toggle' );
+	page               = $( '#site-wrapper' );
+	scrollUp           = page.find( '#scroll-up' );
+	scrollToContent    = page.find( '#scroll-to-content' );
+	mainNav            = page.find( '#menu-primary' );
+	mainNavWrap        = page.find( '#menu-primary .wrap' );
+	primarySidebar     = page.find( '#sidebar-primary' );
+	primarySidebarWrap = page.find( '#sidebar-primary .wrap' );
+	menuButton         = page.find( '#menu-button' );
+	menuToggle         = page.find( '.main-navigation-toggle' );
+	sidebarButton      = page.find( '#sidebar-button' );
+	sidebarToggle      = page.find( '.sidebar-primary-toggle' );
 	
 	// Preload page and fade the content.
 	$( window ).load( function() { // makes sure the whole site is loaded
@@ -72,6 +72,35 @@
 				$( mainNav ).addClass( 'fadeIn' );
 				$( mainNav ).removeClass( 'fadeOut' );
 				$( mainNavWrap ).addClass( 'fadeInDown' );
+				
+				/**
+				 * Handles keyboard navigation.
+				 * We don't want to get lost inside menu unless we close the menu.
+				 */
+	
+				// Set up focusable vars for menu.
+				var focusableMainNav, firstFocusableMainNav, lastFocusableMainNav;
+	
+				// Get all, first and last focusable elements from the Menu.
+				focusableMainNav      = mainNav.find( 'select, input, textarea, button, a' ).filter( ':visible' );
+				firstFocusableMainNav = focusableMainNav.first();
+				lastFocusableMainNav  = focusableMainNav.last();
+	
+				// Redirect last tab to first input.
+				lastFocusableMainNav.on( 'keydown', function ( e ) {
+					if ( ( e.keyCode === 9 && !e.shiftKey ) ) {
+						e.preventDefault();
+						firstFocusableMainNav.focus(); // Set focus on first element - that's actually close menu button.	
+					}
+				});
+
+				// Redirect first shift+tab to last input.
+				firstFocusableMainNav.on( 'keydown', function ( e ) {
+					if ( ( e.keyCode === 9 && e.shiftKey ) ) {
+						e.preventDefault();
+						lastFocusableMainNav.focus(); // Set focus on last element.
+					}
+				});
 				
 			} else {
 				
@@ -130,6 +159,35 @@
 				$( primarySidebar ).removeClass( 'fadeOut' );
 				$( primarySidebarWrap ).addClass( 'fadeInDown' );
 				$( primarySidebarWrap ).removeClass( 'fadeOutUp' );
+				
+				/**
+				 * Handles keyboard navigation.
+				 * We don't want to get lost inside menu unless we close the menu.
+				 */
+	
+				// Set up focusable vars for sidebar.
+				var focusableSidebar, firstFocusableSidebar, lastFocusableSidebar;
+	
+				// Get all, first and last focusable elements from the Menu.
+				focusableSidebar      = primarySidebar.find( 'select, input, textarea, button, a' ).filter( ':visible' );
+				firstFocusableSidebar = focusableSidebar.first();
+				lastFocusableSidebar  = focusableSidebar.last();
+	
+				// Redirect last tab to first input.
+				lastFocusableSidebar.on( 'keydown', function ( e ) {
+					if ( ( e.keyCode === 9 && !e.shiftKey ) ) {
+						e.preventDefault();
+						firstFocusableSidebar.focus(); // Set focus on first element - that's actually close menu button.	
+					}
+				});
+
+				// Redirect first shift+tab to last input.
+				firstFocusableSidebar.on( 'keydown', function ( e ) {
+					if ( ( e.keyCode === 9 && e.shiftKey ) ) {
+						e.preventDefault();
+						lastFocusableSidebar.focus(); // Set focus on last element.
+					}
+				});
 				
 			} else {
 				
@@ -215,4 +273,5 @@
 			}
 		}
 	});
+	
 } )( jQuery );
