@@ -4,7 +4,7 @@ Theme URI: https://theme.wordpress.com/themes/munsa/
 Author: Sami Keijonen
 Author URI: https://foxland.fi/
 Description: Munsa Lite is a minimal theme for creative people like photobloggers and artists. It has a clean and fresh responsive design.
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: munsa-lite
@@ -272,6 +272,10 @@ th {
 /*--------------------------------------------------------------
 2. Preloader
 --------------------------------------------------------------*/
+
+.no-js .preloader {
+	display: none;
+}
 
 .js .preloader {
 	position: fixed;
