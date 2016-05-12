@@ -10,7 +10,7 @@
 /**
  * The current version of the theme.
  */
-define( 'MUNSA_LITE_VERSION', '1.0.2' );
+define( 'MUNSA_LITE_VERSION', '1.0.3' );
 
 /**
  * The suffix to use for scripts.
@@ -60,7 +60,6 @@ function munsa_lite_setup() {
 	
 	// Add custom image sizes.
 	add_image_size( 'munsa-medium', 920, 9999, false );
-	add_image_size( 'munsa-site-logo', 9999, 192, false );
 	add_image_size( 'munsa-smaller', 125, 125, true );
 
 	// This theme uses wp_nav_menu() in two location.
@@ -92,10 +91,14 @@ function munsa_lite_setup() {
 		'video',
 	) );
 	
-	// Add theme support for site logo.
-	add_theme_support( 'site-logo', array(
-		'size' => 'munsa-site-logo',
+	// Add support for logo.
+	add_theme_support( 'custom-logo', array(
+		'height' => 192,
+		'width'  => 192,
 	) );
+	
+	// Add theme support for refresh widgets.
+	add_theme_support( 'customize-selective-refresh-widgets' );
 	
 	// Add theme support for responsive videos.
 	add_theme_support( 'jetpack-responsive-videos' );
@@ -227,7 +230,7 @@ function munsa_lite_scripts() {
 	
 	// Enqueue theme scripts.
 	wp_enqueue_script( 'munsa-lite-settings', get_template_directory_uri() . '/js/settings' . MUNSA_LITE_SUFFIX . '.js', array( 'jquery', 'smooth-scroll' ), '20150906', true );
-	wp_localize_script( 'munsa-lite-settings', 'screenReaderText', array(
+	wp_localize_script( 'munsa-lite-settings', 'MunsaLiteScreenReaderText', array(
 		'expandMenu'      => esc_html__( 'Menu', 'munsa-lite' ),
 		'collapseMenu'    => esc_html__( 'Close', 'munsa-lite' ),
 		'expandSidebar'   => esc_html__( 'Info', 'munsa-lite' ),

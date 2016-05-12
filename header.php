@@ -54,7 +54,7 @@
 			
 				<?php do_action( 'munsa_lite_open_branding' ); ?>
 			
-				<?php if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
+				<?php munsa_lite_the_custom_logo() ?>
 			
 				<?php if ( is_front_page() && is_home() ) : ?>
 					<h1 class="site-title" <?php hybrid_attr( 'site-title' ); ?>><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
