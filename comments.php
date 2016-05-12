@@ -38,7 +38,7 @@ if ( post_password_required() ) {
 					'style'       => 'ol',
 					'short_ping'  => true,
 					'avatar_size' => 50,
-					'callback'    => 'munsa_comment_callback'
+					'callback'    => 'munsa_lite_comment_callback'
 				) );
 			?>
 		</ol><!-- .comment-list -->
