@@ -118,7 +118,7 @@
 			}
 			
 			// Change button text when opening and closing the menu.
-			menuToggle.html( menuToggle.html() === screenReaderText.expandMenu ? screenReaderText.collapseMenu : screenReaderText.expandMenu );
+			menuToggle.html( menuToggle.html() === MunsaLiteScreenReaderText.expandMenu ? MunsaLiteScreenReaderText.collapseMenu : MunsaLiteScreenReaderText.expandMenu );
 			
 			// If aria-expanded is false, set it to true. And vica versa.
 			$( menuToggle ).attr( 'aria-expanded', $( menuToggle ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
@@ -206,7 +206,7 @@
 			}
 			
 			// Change button text when opening and closing the sidebar.
-			sidebarToggle.html( sidebarToggle.html() === screenReaderText.expandSidebar ? screenReaderText.collapseSidebar : screenReaderText.expandSidebar );
+			sidebarToggle.html( sidebarToggle.html() === MunsaLiteScreenReaderText.expandSidebar ? MunsaLiteScreenReaderText.collapseSidebar : MunsaLiteScreenReaderText.expandSidebar );
 			
 			// If aria-expanded is false, set it to true. And vica versa.
 			$( sidebarToggle ).attr( 'aria-expanded', $( sidebarToggle ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
@@ -237,7 +237,7 @@
 				$( mainNavWrap ).removeClass( 'fadeInDown' );
 				
 				// Change button text when closing the menu.
-				menuToggle.html( menuToggle.html() === screenReaderText.expandMenu ? screenReaderText.collapseMenu : screenReaderText.expandMenu );
+				menuToggle.html( menuToggle.html() === MunsaLiteScreenReaderText.expandMenu ? MunsaLiteScreenReaderText.collapseMenu : MunsaLiteScreenReaderText.expandMenu );
 			
 				// Enable focus on toggle button.
 				menuButton.focus();
@@ -261,7 +261,7 @@
 				$( primarySidebarWrap ).removeClass( 'fadeInDown' );
 				
 				// Change button text when closing the sidebar.
-				sidebarToggle.html( sidebarToggle.html() === screenReaderText.expandSidebar ? screenReaderText.collapseSidebar : screenReaderText.expandSidebar );
+				sidebarToggle.html( sidebarToggle.html() === MunsaLiteScreenReaderText.expandSidebar ? MunsaLiteScreenReaderText.collapseSidebar : MunsaLiteScreenReaderText.expandSidebar );
 		
 				// Enable focus on toggle button.
 				sidebarButton.focus();
