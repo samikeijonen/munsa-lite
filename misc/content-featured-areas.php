@@ -72,7 +72,7 @@ if ( $blog_content->have_posts() || ! empty( $munsa_lite_featured_pages ) ) :
 							
 							// Featured are title.
 							if( get_theme_mod( 'blog_area_title', esc_html__( 'Articles', 'munsa-lite' ) ) ) :
-								echo '<h2 class="blog-title entry-title">' . get_theme_mod( 'blog_area_title', esc_html__( 'Articles', 'munsa-lite' ) ) . '</h2>';
+								echo '<h2 class="blog-title entry-title">' . esc_html( get_theme_mod( 'blog_area_title', esc_html__( 'Articles', 'munsa-lite' ) ) ) . '</h2>';
 							endif;
 							
 							// Featured are link
