@@ -1,10 +1,10 @@
 /*
 Theme Name: Munsa Lite
-Theme URI: https://theme.wordpress.com/themes/munsa/
+Theme URI: https://foxland.fi/downloads/munsa/
 Author: Sami Keijonen
 Author URI: https://foxland.fi/
 Description: Munsa Lite is a minimal theme for creative people like photobloggers and artists. It has a clean and fresh responsive design.
-Version: 1.0.2
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: munsa-lite
@@ -1083,7 +1083,9 @@ a:active {
 	-webkit-transform: translateY(-25%) rotateX(35deg);
 	        transform: translateY(-25%) rotateX(35deg);
 	transition: -webkit-transform 300ms, opacity 300ms;
+	transition: opacity 300ms, -webkit-transform 300ms;
 	transition: transform 300ms, opacity 300ms;
+	transition: transform 300ms, opacity 300ms, -webkit-transform 300ms;
 }
 .js .sidebar-primary .widget:first-child {
 	padding-top: 4em;
@@ -2174,7 +2176,8 @@ a:active {
 		margin-left: -1.8em;
 		-webkit-align-items: center;
 		    -ms-flex-align: center;
-		        align-items: center;
+		        -ms-grid-row-align: center;
+		    align-items: center;
 	}
 	
 	.featured-pages-wrapper {
@@ -2197,7 +2200,8 @@ a:active {
 	.sidebar-footer > .wrap {
 		-webkit-align-items: flex-start;
 		    -ms-flex-align: start;
-		        align-items: flex-start;
+		        -ms-grid-row-align: flex-start;
+		    align-items: flex-start;
 	}
 	
 	.page-template-featured-image-right .post-thumbnail,
@@ -2559,8 +2563,13 @@ object {
 	max-width: 100%;
 }
 
-/* Players. */
+/* Logo. */
+.custom-logo-link > img {
+	border-radius: 50%;
+	max-width: 96px;
+}
 
+/* Players. */
 body .wp-playlist,
 body .wp-playlist-item {
 	border: none;
