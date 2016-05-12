@@ -11,7 +11,7 @@ msgstr ""
 "PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 0.5.0\n"
+"X-Generator: grunt-wp-i18n 0.5.3\n"
 "Language: en_US\n"
 
 #: 404.php:15
@@ -69,38 +69,38 @@ msgstr ""
 msgid "Back to top"
 msgstr ""
 
-#: functions.php:68 menus/menu-primary.php:13
+#: functions.php:67 menus/menu-primary.php:13
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:69
+#: functions.php:68
 msgid "Social Links Menu"
 msgstr ""
 
-#: functions.php:135
+#: functions.php:138
 msgid ""
 "The main sidebar. It is displayed on the right side of the page as off "
 "canvas sidebar."
 msgstr ""
 
-#: functions.php:145
+#: functions.php:148
 msgid "A sidebar located in the footer of the site."
 msgstr ""
 
-#: functions.php:231 menus/menu-primary.php:11
+#: functions.php:234 menus/menu-primary.php:11
 msgid "Menu"
 msgstr ""
 
-#: functions.php:232 functions.php:234 menus/menu-primary.php:15
+#: functions.php:235 functions.php:237 menus/menu-primary.php:15
 #: sidebar-primary.php:16
 msgid "Close"
 msgstr ""
 
-#: functions.php:233 sidebar-primary.php:11
+#: functions.php:236 sidebar-primary.php:11
 msgid "Info"
 msgstr ""
 
-#: functions.php:277
+#: functions.php:280
 #. Translators: The %s is the post title shown to screen readers.
 msgid "Continue reading %s"
 msgstr ""
@@ -268,7 +268,7 @@ msgid "Munsa Lite"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://theme.wordpress.com/themes/munsa/"
+msgid "https://foxland.fi/downloads/munsa/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -297,17 +297,17 @@ msgid_plural "%1$s comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:134
+#: functions.php:137
 msgctxt "sidebar"
 msgid "Primary"
 msgstr ""
 
-#: functions.php:144
+#: functions.php:147
 msgctxt "sidebar"
 msgid "Footer"
 msgstr ""
 
-#: functions.php:174
+#: functions.php:177
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
@@ -315,7 +315,7 @@ msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:179
+#: functions.php:182
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.
