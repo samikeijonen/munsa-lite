@@ -27,7 +27,7 @@ The following recources are used in `style.css` for styling elements.
 
 The following images are are used in `screenshot.png`. They are all licensed under [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/).
 
-* [Image 1](http://kaboompics.com/one_foto/1012/white-laptop-female-hand-note-pen-phone-desk#)
+* [Image 1](https://unsplash.com/photos/s9CC2SKySJM)
 * [Image 2](https://www.pexels.com/photo/people-sport-skateboard-skateboarder-2639/)
 
 All other resources and theme elements are licensed under the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html), version 2 or later.
@@ -35,6 +35,12 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 &copy; 2016 [Sami Keijonen](https://foxland.fi/).
 
 ## Changelog
+
+### Version 1.0.3 - May 12, 2016
+
+* Use WordPress native logo system.
+* Fix wrong function name.
+* Update screenshot.png.
 
 ### Version 1.0.2 - February 1, 2016
 
