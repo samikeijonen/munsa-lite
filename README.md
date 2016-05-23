@@ -36,6 +36,11 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.0.4 - May 23, 2016
+
+* Fix accessibility issues on focus and hover styles.
+* Fix accessibility issues on dark grey links to have enough color contrast.
+
 ### Version 1.0.3 - May 12, 2016
 
 * Use WordPress native logo system.
