@@ -36,6 +36,10 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.0.5 - May 23, 2016
+
+* Remove aria-hidden="true" from focusable elements.
+
 ### Version 1.0.4 - May 23, 2016
 
 * Fix accessibility issues on focus and hover styles.

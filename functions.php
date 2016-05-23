@@ -10,7 +10,7 @@
 /**
  * The current version of the theme.
  */
-define( 'MUNSA_LITE_VERSION', '1.0.4' );
+define( 'MUNSA_LITE_VERSION', '1.0.5' );
 
 /**
  * The suffix to use for scripts.
