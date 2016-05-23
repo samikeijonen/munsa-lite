@@ -147,7 +147,7 @@ function munsa_lite_post_thumbnail( $post_thumbnail = null ) {
 
 	<?php else : ?>
 
-		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
+		<a class="post-thumbnail" href="<?php the_permalink(); ?>">
 			<?php the_post_thumbnail( esc_attr( $post_thumbnail ), array( 'alt' => the_title_attribute( 'echo=0' ) ) ); ?>
 		</a>
 

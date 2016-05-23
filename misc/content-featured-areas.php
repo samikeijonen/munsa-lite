@@ -92,7 +92,7 @@ if ( $blog_content->have_posts() || ! empty( $munsa_lite_featured_pages ) ) :
 							
 							<?php if ( has_post_thumbnail() ) : ?>
 								
-								<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
+								<a class="post-thumbnail" href="<?php the_permalink(); ?>">
 									<?php the_post_thumbnail( 'munsa-smaller', array( 'alt' => the_title_attribute( 'echo=0' ) ) ); ?>
 								</a>
 										
