@@ -4,7 +4,7 @@ Theme URI: https://foxland.fi/downloads/munsa/
 Author: Sami Keijonen
 Author URI: https://foxland.fi/
 Description: Munsa Lite is a minimal theme for creative people like photobloggers and artists. It has a clean and fresh responsive design.
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: munsa-lite
@@ -476,7 +476,7 @@ h6 {
 }
 
 h6 {
-	color: #777;
+	color: #666;
 }
 
 @media only screen and (min-width: 782px) {
@@ -491,6 +491,19 @@ h6 {
 p,
 .post-thumbnail {
 	margin: 0 0 1.8em;
+}
+.post-thumbnail {
+	display: block;
+	opacity: 1;
+	transition: all 0.25s easy-in-out;
+}
+a.post-thumbnail:focus {
+	outline-offset: -4px;
+}
+a.post-thumbnail:hover,
+a.post-thumbnail:focus,
+a.post-thumbnail:active {
+	opacity: 0.85;
 }
 .post-thumbnail > img {
 	display: block;
@@ -588,7 +601,7 @@ q {
 }
 
 blockquote {
-	color: #777;
+	color: #666;
 	font-size: 1.5em;
 	font-style: italic;
 	padding: 0 3%;
@@ -818,6 +831,14 @@ body #infinite-handle span button:active {
 	background-color: #444;
 	color: #fff;
 }
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+.munsa-button:focus {
+	outline: thin dotted;
+	outline-offset: -2px;
+}
 
 body #infinite-handle span button:hover,
 body #infinite-handle span button:focus,
@@ -948,7 +969,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-	color: #444;
+	color: #666;
 }
 
 a:focus {
@@ -1507,7 +1528,7 @@ a:active {
 .meta-nav,
 .pagination .page-numbers,
 .entry-footer {
-	color: #777;
+	color: #666;
 }
 
 .pagination .page-numbers,
@@ -1715,7 +1736,7 @@ a:active {
 .contact-info-list li,
 .contact-info-list a,
 .contact-info-list a:visited {
-	color: #777;
+	color: #666;
 	font-family: Montserrat, "Helvetica Neue", sans-serif;
 	font-size: 0.7777777777em;
 	letter-spacing: 2px;
@@ -1917,7 +1938,7 @@ a:active {
 .entry-meta,
 .taxonomy-description,
 .entry-footer {
-	color: #777;
+	color: #666;
 	font-family: Montserrat, "Helvetica Neue", sans-serif;
 	font-size: 0.7777777777em;
 	letter-spacing: 2px;
@@ -1936,8 +1957,13 @@ a:active {
 }
 .entry-meta a,
 .entry-meta a:visited {
-	color: #777;
+	color: #666;
 	text-decoration: none;
+}
+.entry-meta a:hover,
+.entry-meta a:focus,
+.entry-meta a:active {
+	color: #000;
 }
 
 .terms-title {
@@ -1953,7 +1979,6 @@ a:active {
 .updated:not(.published) {
 	display: none;
 }
-.entry-date,
 .single .byline,
 .group-blog .byline {
 	display: block;
@@ -2360,7 +2385,7 @@ a:active {
 .comment-meta,
 .no-comments,
 .comment-navigation {
-	color: #777;
+	color: #666;
 	font-family: Montserrat, "Helvetica Neue", sans-serif;
 	font-size: 0.777777777em;
 	letter-spacing: 2px;
@@ -2393,10 +2418,15 @@ a:active {
 	text-decoration: none;
 }
 .comment-permalink {
-	color: #777;
+	color: #666;
 	font-size: 0.875em;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+}
+.comment-permalink:hover,
+.comment-permalink:focus,
+.comment-permalink:active {
+	color: #000;
 }
 .comment-author {
 	color: #000;
@@ -2564,7 +2594,7 @@ object {
 }
 
 /* Logo. */
-.custom-logo-link > img {
+.custom-logo {
 	border-radius: 50%;
 	max-width: 96px;
 }
@@ -2673,8 +2703,8 @@ body .wp-playlist.wp-playlist-dark {
 	background: #000;
 }
 body .wp-playlist-dark .wp-playlist-tracks {
-    border-top-color: #777;
-	border-bottom-color: #777;
+    border-top-color: #666;
+	border-bottom-color: #666;
 }
 .wp-playlist-dark .munsa-mejs-container.mejs-container .mejs-controls .mejs-button button:before,
 .wp-playlist-dark .munsa-mejs-container.mejs-container .mejs-controls .mejs-time,
@@ -2687,7 +2717,7 @@ body .wp-playlist-dark .wp-playlist-tracks {
 .wp-playlist-dark .munsa-mejs-container.mejs-container .mejs-controls .mejs-time-rail .mejs-time-float,
 .wp-playlist-dark .munsa-mejs-container.mejs-container .mejs-controls .mejs-time-rail .mejs-time-loaded,
 .wp-playlist-dark .munsa-mejs-container.mejs-container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
-	background-color: #777;
+	background-color: #666;
 }
 
 
