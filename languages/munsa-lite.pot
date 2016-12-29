@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Munsa Lite 1.0.5\n"
+"Project-Id-Version: Munsa Lite 1.1.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
 "POT-Creation-Date: 2016-01-10 18:53:35+00:00\n"
 "MIME-Version: 1.0\n"
@@ -11,7 +11,7 @@ msgstr ""
 "PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 0.5.3\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
 "Language: en_US\n"
 
 #: 404.php:15
@@ -100,7 +100,7 @@ msgstr ""
 msgid "Info"
 msgstr ""
 
-#: functions.php:280
+#: functions.php:291
 #. Translators: The %s is the post title shown to screen readers.
 msgid "Continue reading %s"
 msgstr ""
@@ -165,6 +165,14 @@ msgstr ""
 msgid ""
 "Hide or change footer text, several addiotional page templates, new "
 "widgets, and support."
+msgstr ""
+
+#: inc/customizer/pro/class-customize.php:77
+msgid "Munsa (Pro)"
+msgstr ""
+
+#: inc/customizer/pro/class-customize.php:78
+msgid "Go Pro"
 msgstr ""
 
 #: inc/customizer.php:19
