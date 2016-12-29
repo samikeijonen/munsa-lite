@@ -10,7 +10,7 @@
 /**
  * The current version of the theme.
  */
-define( 'MUNSA_LITE_VERSION', '1.0.5' );
+define( 'MUNSA_LITE_VERSION', '1.1.0' );
 
 /**
  * The suffix to use for scripts.
@@ -223,13 +223,13 @@ function munsa_lite_scripts() {
 	}
 	
 	// Enqueue active theme styles.
-	wp_enqueue_style( 'munsa-lite-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'munsa-lite-style', get_stylesheet_uri(), array(), munsa_lite_theme_version() );
 	
 	// Enqueue smooth scroll.
-	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/js/smooth-scroll' . MUNSA_LITE_SUFFIX . '.js', array(), '20150906', true );
+	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/js/smooth-scroll' . MUNSA_LITE_SUFFIX . '.js', array(), '20161229', true );
 	
 	// Enqueue theme scripts.
-	wp_enqueue_script( 'munsa-lite-settings', get_template_directory_uri() . '/js/settings' . MUNSA_LITE_SUFFIX . '.js', array( 'jquery', 'smooth-scroll' ), '20150906', true );
+	wp_enqueue_script( 'munsa-lite-settings', get_template_directory_uri() . '/js/settings' . MUNSA_LITE_SUFFIX . '.js', array( 'jquery', 'smooth-scroll' ), '20161229', true );
 	wp_localize_script( 'munsa-lite-settings', 'MunsaLiteScreenReaderText', array(
 		'expandMenu'      => esc_html__( 'Menu', 'munsa-lite' ),
 		'collapseMenu'    => esc_html__( 'Close', 'munsa-lite' ),
@@ -238,13 +238,24 @@ function munsa_lite_scripts() {
 	) );
 	
 	// Enqueue skip link focus fix.
-	wp_enqueue_script( 'munsa-lite-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix' . MUNSA_LITE_SUFFIX . '.js', array(), '20150906', true );
+	wp_enqueue_script( 'munsa-lite-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix' . MUNSA_LITE_SUFFIX . '.js', array(), '20161229', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'munsa_lite_scripts' );
+
+/**
+ * Get theme version number, works also for child themes.
+ *
+ * @since  1.1.0
+ * @return string $theme_version
+ */
+function munsa_lite_theme_version() {
+	$theme = is_child_theme() ? wp_get_theme( get_stylesheet() ) : wp_get_theme( get_template() );
+	return $theme_version = $theme->get( 'Version' );
+}
 
 /**
  * Adds custom classes to the array of body classes.
@@ -370,3 +381,8 @@ require get_template_directory() . '/inc/schema.php';
  * Load archive filters file.
  */
 require get_template_directory() . '/inc/archive-filters.php';
+
+/**
+ * Load pro link in the Customizer.
+ */
+require get_template_directory() . '/inc/customizer/pro/class-customize.php';
