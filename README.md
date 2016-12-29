@@ -36,6 +36,14 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.1.0 - December 29, 2016
+
+* Fix skip to content script.
+* Remove rel="designer" from the footer.
+* Update screen-reader-text class by adding word-wrap: normal.
+* Update smooth scroll script.
+* Add Pro link in the Customizer.
+
 ### Version 1.0.5 - May 23, 2016
 
 * Remove aria-hidden="true" from focusable elements.
