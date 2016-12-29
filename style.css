@@ -4,11 +4,11 @@ Theme URI: https://foxland.fi/downloads/munsa/
 Author: Sami Keijonen
 Author URI: https://foxland.fi/
 Description: Munsa Lite is a minimal theme for creative people like photobloggers and artists. It has a clean and fresh responsive design.
-Version: 1.0.5
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: munsa-lite
-Tags: black, white, light, one-column, fluid-layout, responsive-layout, accessibility-ready, custom-background, custom-header, custom-menu, editor-style, featured-images, theme-options, translation-ready
+Tags: one-column, grid-layout, accessibility-ready, custom-background, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready, blog, photography, portfolio
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -1570,6 +1570,7 @@ a:active {
 	width: 1px;
 	overflow: hidden;
 	text-transform: uppercase;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
 .screen-reader-text:focus {
