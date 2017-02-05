@@ -219,7 +219,7 @@ function munsa_lite_scripts() {
 	
 	// Enqueue parent theme styles if using child theme.
 	if ( is_child_theme() ) {
-		wp_enqueue_style( 'munsa-lite-parent-style', trailingslashit( get_template_directory_uri() ) . 'style' . MUNSA_LITE_SUFFIX . '.css', array(), null );
+		wp_enqueue_style( 'munsa-lite-parent-style', trailingslashit( get_template_directory_uri() ) . 'style' . MUNSA_LITE_SUFFIX . '.css', array(), MUNSA_LITE_VERSION );
 	}
 	
 	// Enqueue active theme styles.
